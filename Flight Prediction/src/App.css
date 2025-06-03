@@ -1,0 +1,153 @@
+/* App.css */
+
+/* Global styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #e0f7fa, #f1f8e9);
+  color: #333;
+  min-height: 100vh;
+}
+
+/* Container styles */
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Title styles */
+h1 {
+  text-align: center;
+  color: #007acc;
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+/* Form card styles */
+.card {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  margin: auto;
+  max-width: 1000px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.01);
+}
+
+/* Left image section */
+.card-image {
+  flex: 1;
+  min-width: 300px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Right form section */
+.card-form {
+  flex: 1;
+  padding: 2.5rem;
+  background-color: #f9f9f9;
+}
+
+/* Label and input styles */
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #555;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  margin-bottom: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input:focus,
+select:focus {
+  border-color: #007acc;
+}
+
+/* Submit button styles */
+button {
+  background-color: #007acc;
+  color: #fff;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+/* Prediction output */
+.prediction {
+  background-color: #e0ffe4;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+  border-left: 5px solid #2ecc71;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  color: #2e7d32;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Chart wrapper */
+.chart-container {
+  margin-top: 2rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Responsive tweaks */
+@media (max-width: 1024px) {
+  .card {
+    flex-direction: column;
+    max-width: 90%;
+  }
+
+  .card-image {
+    height: 250px;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-form {
+    padding: 1.5rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .prediction {
+    font-size: 1.1rem;
+  }
+}
