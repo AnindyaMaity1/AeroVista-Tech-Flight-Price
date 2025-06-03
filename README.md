@@ -35,10 +35,11 @@ Predict flight ticket prices based on various input features such as origin, des
 
 ## 📁 Project Structure
 
-├── backend/ # Python Flask API & model training
-├── frontend/ # ReactJS + Tailwind CSS UI
-├── model/ # Saved ML models and datasets
-└── README.md # Project documentation
+| Folder/File       | Description                          |
+|-------------------|--------------------------------------|
+| `backend/`        | 🐍 Python Flask API & model training |
+| `frontend/`       | ⚛️ ReactJS + 🎨 Tailwind CSS UI      |
+| `model/`          | 💾 Saved ML models and datasets      |
 
 ---
 
